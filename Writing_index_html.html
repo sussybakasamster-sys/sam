@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><base href="https://d16ilfvy4mv02r.cloudfront.net/workspaces/dCBi9yFPoDythQuO8RpzcylbjO3YgVoX/0a066c75-0f1d-4363-b618-8d27763e4a0e/files/">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProServ Elite | Home Services & Repair Experts</title>
+  <meta name="description" content="ProServ Elite offers professional home services including plumbing, electrical, HVAC, and more. Serving Los Angeles, CA and surrounding areas. Call (310) 555-0199 today!" />
+  <meta name="keywords" content="home services Los Angeles, plumbing Los Angeles, electrician LA, HVAC repair, handyman near me, ProServ Elite" />
+  <link rel="canonical" href="https://proservelite.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ProServ Elite | Home Services & Repair Experts" />
+  <meta property="og:description" content="5-star rated home services in Los Angeles. Available 24/7. Book online or call now!" />
+  <meta property="og:type" content="website" />
+
+  <!-- Schema.org Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ProServ Elite",
+    "image": "https://proservelite.com/logo.png",
+    "telephone": "+1-310-555-0199",
+    "email": "hello@proservelite.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1247 Sunset Blvd",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "postalCode": "90026",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.0765,
+      "longitude": -118.2604
+    },
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"20:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"08:00","closes":"17:00"}
+    ],
+    "priceRange": "$$",
+    "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"312"}
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #1a56db;
+      --primary-dark: #1341b5;
+      --accent: #f59e0b;
+      --accent-dark: #d97706;
+      --dark: #0f172a;
+      --dark2: #1e293b;
+      --gray: #64748b;
+      --light: #f8fafc;
+      --white: #ffffff;
+      --success: #10b981;
+      --radius: 12px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.10);
+      --shadow-lg: 0 8px 40px rgba(0,0,0,0.16);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* ===== STICKY NAV ===== */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      padding: 0 5%;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 70px;
+      transition: box-shadow .3s;
+    }
+    nav.scrolled { box-shadow: var(--shadow); }
+
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 1.4rem; font-weight: 800; color: var(--primary);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--accent); }
+    .nav-logo i { font-size: 1.6rem; }
+
+    .nav-links {
+      display: flex; align-items: center; gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none; color: var(--dark2); font-weight: 500;
+      font-size: .93rem; transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--primary); }
+
+    .nav-cta {
+      display: flex; align-items: center; gap: 1rem;
+    }
+    .btn-phone {
+      display: flex; align-items: center; gap: 7px;
+      background: var(--accent); color: var(--dark); font-weight: 700;
+      padding: 9px 18px; border-radius: 50px; text-decoration: none;
+      font-size: .92rem; transition: background .2s, transform .15s;
+    }
+    .btn-phone:hover { background: var(--accent-dark); transform: scale(1.03); }
+
+    .btn-primary {
+      background: var(--primary); color: #fff; font-weight: 600;
+      padding: 10px 22px; border-radius: 50px; text-decoration: none;
+      font-size: .93rem; border: none; cursor: pointer;
+      transition: background .2s, transform .15s;
+      display: inline-flex; align-items: center; gap: 7px;
+    }
+    .btn-primary:hover { background: var(--primary-dark); transform: scale(1.03); }
+
+    .hamburger {
+      display: none; background: none; border: none; cursor: pointer;
+      flex-direction: column; gap: 5px;
+    }
+    .hamburger span { width: 26px; height: 2.5px; background: var(--dark); border-radius: 2px; transition: .3s; display: block; }
+
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f172a 0%, #1a2e5a 50%, #1a56db 100%);
+      display: flex; align-items: center;
+      padding: 100px 5% 60px;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-content { max-width: 680px; position: relative; z-index: 1; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(245,158,11,.15); border: 1px solid rgba(245,158,11,.4);
+      color: var(--accent); padding: 6px 16px; border-radius: 50px;
+      font-size: .85rem; font-weight: 600; margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 900; color: #fff; line-height: 1.15;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 span { color: var(--accent); }
+    .hero p {
+      font-size: 1.15rem; color: rgba(255,255,255,.78);
+      line-height: 1.7; margin-bottom: 2rem; max-width: 540px;
+    }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
+    .btn-hero-primary {
+      background: var(--accent); color: var(--dark); font-weight: 800;
+      padding: 15px 32px; border-radius: 50px; text-decoration: none;
+      font-size: 1.05rem; transition: all .2s;
+      display: inline-flex; align-items: center; gap: 9px;
+    }
+    .btn-hero-primary:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(245,158,11,.4); }
+    .btn-hero-secondary {
+      background: rgba(255,255,255,.12); color: #fff; font-weight: 600;
+      padding: 15px 32px; border-radius: 50px; text-decoration: none;
+      font-size: 1.05rem; border: 1px solid rgba(255,255,255,.25);
+      transition: all .2s; display: inline-flex; align-items: center; gap: 9px;
+    }
+    .btn-hero-secondary:hover { background: rgba(255,255,255,.2); transform: translateY(-2px); }
+
+    .hero-stats {
+      display: flex; gap: 2.5rem; flex-wrap: wrap;
+    }
+    .hero-stat { }
+    .hero-stat .num { font-size: 2rem; font-weight: 800; color: #fff; }
+    .hero-stat .lbl { font-size: .83rem; color: rgba(255,255,255,.6); margin-top: 2px; }
+
+    .hero-stars {
+      display: flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12);
+      padding: 10px 18px; border-radius: 50px; color: #fff;
+      font-size: .88rem; margin-top: 2rem; width: fit-content;
+    }
+    .hero-stars i { color: var(--accent); font-size: .9rem; }
+
+    /* ===== TRUST BAR ===== */
+    .trust-bar {
+      background: var(--dark);
+      padding: 18px 5%;
+      display: flex; align-items: center; justify-content: center; gap: 3rem;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex; align-items: center; gap: 10px;
+      color: rgba(255,255,255,.7); font-size: .9rem; font-weight: 500;
+    }
+    .trust-item i { color: var(--accent); font-size: 1.1rem; }
+
+    /* ===== SECTION DEFAULTS ===== */
+    section { padding: 80px 5%; }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      color: var(--primary); font-weight: 700; font-size: .85rem;
+      text-transform: uppercase; letter-spacing: .08em;
+      margin-bottom: .6rem;
+    }
+    .section-label::before { content: ''; width: 28px; height: 3px; background: var(--primary); border-radius: 2px; }
+    .section-title {
+      font-size: clamp(1.7rem, 3vw, 2.6rem); font-weight: 800;
+      color: var(--dark); line-height: 1.25; margin-bottom: 1rem;
+    }
+    .section-sub { font-size: 1.05rem; color: var(--gray); max-width: 560px; line-height: 1.7; }
+    .text-center { text-align: center; }
+    .text-center .section-sub { margin: 0 auto; }
+    .text-center .section-label::before { display: none; }
+
+    /* ===== SERVICES ===== */
+    #services { background: var(--light); }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem; margin-top: 3rem;
+    }
+    .service-card {
+      background: #fff; border-radius: var(--radius);
+      padding: 2rem; box-shadow: var(--shadow);
+      border: 1px solid rgba(0,0,0,.06);
+      transition: transform .25s, box-shadow .25s;
+      cursor: pointer; position: relative; overflow: hidden;
+    }
+    .service-card::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+      height: 4px; background: linear-gradient(90deg, var(--primary), var(--accent));
+      transform: scaleX(0); transform-origin: left; transition: transform .3s;
+    }
+    .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+    .service-card:hover::after { transform: scaleX(1); }
+    .service-icon {
+      width: 56px; height: 56px; border-radius: 14px;
+      background: linear-gradient(135deg, var(--primary), #4f8ef7);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.2rem;
+    }
+    .service-icon i { color: #fff; font-size: 1.4rem; }
+    .service-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: .6rem; }
+    .service-card p { font-size: .93rem; color: var(--gray); line-height: 1.6; margin-bottom: 1rem; }
+    .service-link {
+      color: var(--primary); font-weight: 600; font-size: .9rem;
+      text-decoration: none; display: inline-flex; align-items: center; gap: 5px;
+    }
+    .service-link:hover { gap: 9px; }
+    .service-price {
+      position: absolute; top: 1.2rem; right: 1.2rem;
+      background: rgba(26,86,219,.08); color: var(--primary);
+      font-size: .78rem; font-weight: 700; padding: 4px 10px; border-radius: 50px;
+    }
+
+    /* ===== WHY US ===== */
+    .why-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 4rem; align-items: center; margin-top: 1rem;
+    }
+    .why-items { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+    .why-item { display: flex; gap: 1rem; }
+    .why-icon {
+      width: 48px; height: 48px; min-width: 48px; border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary), #4f8ef7);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .why-icon i { color: #fff; font-size: 1.1rem; }
+    .why-item h4 { font-weight: 700; margin-bottom: .3rem; }
+    .why-item p { font-size: .92rem; color: var(--gray); line-height: 1.6; }
+    .why-visual {
+      border-radius: 20px; overflow: hidden; position: relative;
+      background: linear-gradient(135deg, #1a56db, #0f172a);
+      min-height: 450px; display: flex; flex-direction: column;
+      justify-content: flex-end; padding: 2rem;
+    }
+    .why-visual-bg {
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect fill='%231a56db' width='800' height='600'/%3E%3Ccircle cx='400' cy='250' r='200' fill='%230f2878' opacity='.6'/%3E%3Ccircle cx='600' cy='100' r='150' fill='%234f8ef7' opacity='.3'/%3E%3C/svg%3E") center/cover;
+    }
+    .why-stats-overlay {
+      position: relative; z-index: 1;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+    }
+    .why-stat-box {
+      background: rgba(255,255,255,.1); backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,.15);
+      padding: 1.2rem; border-radius: 12px; color: #fff;
+    }
+    .why-stat-box .big { font-size: 2rem; font-weight: 800; color: var(--accent); }
+    .why-stat-box .sm { font-size: .8rem; color: rgba(255,255,255,.7); margin-top: 3px; }
+
+    /* ===== LOCAL SEO PAGES ===== */
+    #locations { background: var(--dark); color: #fff; }
+    #locations .section-title { color: #fff; }
+    #locations .section-sub { color: rgba(255,255,255,.65); }
+    #locations .section-label { color: var(--accent); }
+    .locations-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem; margin-top: 3rem;
+    }
+    .location-card {
+      background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.10);
+      border-radius: var(--radius); padding: 1.5rem;
+      transition: background .25s, transform .25s;
+      cursor: pointer;
+    }
+    .location-card:hover { background: rgba(255,255,255,.12); transform: translateY(-4px); }
+    .location-card h3 {
+      font-size: 1.05rem; font-weight: 700; margin-bottom: .4rem;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .location-card h3 i { color: var(--accent); }
+    .location-card p { font-size: .85rem; color: rgba(255,255,255,.55); line-height: 1.6; }
+    .location-card .loc-link {
+      display: inline-flex; align-items: center; gap: 5px;
+      color: var(--primary); font-size: .83rem; font-weight: 600;
+      text-decoration: none; margin-top: .8rem;
+    }
+    .location-card .loc-link:hover { color: #4f8ef7; }
+
+    /* ===== MAP SECTION ===== */
+    #map-section { padding: 0; }
+    .map-wrapper {
+      display: grid; grid-template-columns: 1fr 1.6fr;
+    }
+    .map-info {
+      background: var(--primary); color: #fff;
+      padding: 4rem 5%;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .map-info h2 { font-size: 2rem; font-weight: 800; margin-bottom: 1.5rem; }
+    .map-detail {
+      display: flex; align-items: flex-start; gap: 14px;
+      margin-bottom: 1.2rem;
+    }
+    .map-detail i { font-size: 1.1rem; color: var(--accent); margin-top: 2px; }
+    .map-detail .label { font-size: .8rem; opacity: .7; margin-bottom: 2px; }
+    .map-detail .val { font-weight: 600; font-size: 1rem; }
+    .map-detail a { color: #fff; text-decoration: none; }
+    .map-detail a:hover { text-decoration: underline; }
+    .map-hours { margin-top: 1.5rem; }
+    .map-hours h4 { font-weight: 700; margin-bottom: .8rem; color: var(--accent); }
+    .hours-row {
+      display: flex; justify-content: space-between;
+      font-size: .9rem; padding: 6px 0;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+    .open-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(16,185,129,.2); border: 1px solid rgba(16,185,129,.4);
+      color: #6ee7b7; padding: 5px 14px; border-radius: 50px;
+      font-size: .82rem; font-weight: 700; margin-top: 1.2rem;
+    }
+    .open-badge::before { content: ''; width: 8px; height: 8px; background: var(--success); border-radius: 50%; }
+
+    .map-embed {
+      width: 100%; min-height: 520px;
+      display: flex; flex-direction: column;
+    }
+    .map-embed iframe { width: 100%; flex: 1; border: none; }
+
+    /* ===== REVIEWS ===== */
+    #reviews { background: var(--light); }
+    .reviews-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem; margin-top: 3rem;
+    }
+    .review-card {
+      background: #fff; border-radius: var(--radius);
+      padding: 1.8rem; box-shadow: var(--shadow);
+      border: 1px solid rgba(0,0,0,.05);
+      transition: transform .25s;
+    }
+    .review-card:hover { transform: translateY(-4px); }
+    .review-stars { display: flex; gap: 3px; margin-bottom: .8rem; }
+    .review-stars i { color: var(--accent); font-size: .95rem; }
+    .review-text {
+      font-size: .95rem; color: var(--dark2); line-height: 1.7;
+      margin-bottom: 1.2rem; font-style: italic;
+    }
+    .reviewer { display: flex; align-items: center; gap: 12px; }
+    .reviewer-avatar {
+      width: 44px; height: 44px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 1.1rem; color: #fff;
+    }
+    .reviewer-name { font-weight: 700; font-size: .95rem; }
+    .reviewer-sub { font-size: .8rem; color: var(--gray); }
+    .review-source { display: flex; align-items: center; gap: 5px; font-size: .75rem; color: var(--gray); margin-top: .5rem; }
+    .review-source i { color: #4285f4; }
+
+    /* ===== CONTACT FORM ===== */
+    #contact { background: #fff; }
+    .contact-grid {
+      display: grid; grid-template-columns: 1.1fr 1fr;
+      gap: 4rem; margin-top: 3rem;
+    }
+    .form-wrapper {
+      background: var(--light); border-radius: 20px; padding: 2.5rem;
+    }
+    .form-wrapper h3 { font-size: 1.4rem; font-weight: 800; margin-bottom: .5rem; }
+    .form-wrapper p { font-size: .92rem; color: var(--gray); margin-bottom: 1.8rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group { margin-bottom: 1.2rem; }
+    .form-group label {
+      display: block; font-size: .87rem; font-weight: 600;
+      color: var(--dark2); margin-bottom: 6px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%; padding: 12px 16px;
+      border: 1.5px solid #e2e8f0; border-radius: 10px;
+      font-family: 'Inter', sans-serif; font-size: .95rem; color: var(--dark);
+      background: #fff; transition: border-color .2s, box-shadow .2s;
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--primary); box-shadow: 0 0 0 3px rgba(26,86,219,.12);
+    }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+    .btn-submit {
+      width: 100%; padding: 14px; background: var(--primary); color: #fff;
+      font-weight: 700; font-size: 1rem; border: none; border-radius: 10px;
+      cursor: pointer; transition: background .2s, transform .15s;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .btn-submit:hover { background: var(--primary-dark); transform: translateY(-1px); }
+    .btn-submit:disabled { opacity: .7; cursor: not-allowed; transform: none; }
+
+    .form-success {
+      display: none; text-align: center; padding: 2rem 0;
+    }
+    .form-success i { font-size: 3rem; color: var(--success); margin-bottom: 1rem; }
+    .form-success h4 { font-size: 1.3rem; font-weight: 800; margin-bottom: .5rem; }
+    .form-success p { color: var(--gray); }
+
+    .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
+    .contact-info h3 { font-size: 1.6rem; font-weight: 800; margin-bottom: .5rem; }
+    .contact-info p { color: var(--gray); line-height: 1.7; }
+    .contact-card {
+      background: var(--light); border-radius: var(--radius);
+      padding: 1.4rem 1.6rem;
+      display: flex; align-items: center; gap: 1rem;
+      transition: box-shadow .2s;
+    }
+    .contact-card:hover { box-shadow: var(--shadow); }
+    .contact-card-icon {
+      width: 48px; height: 48px; min-width: 48px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .contact-card-icon i { font-size: 1.2rem; color: #fff; }
+    .contact-card h4 { font-size: .85rem; color: var(--gray); font-weight: 500; margin-bottom: 2px; }
+    .contact-card a, .contact-card p.val {
+      font-size: 1rem; font-weight: 700; color: var(--dark);
+      text-decoration: none;
+    }
+    .contact-card a:hover { color: var(--primary); }
+
+    /* ===== FAQ ===== */
+    .faq-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+      gap: 1rem; margin-top: 3rem;
+    }
+    .faq-item {
+      background: var(--light); border-radius: var(--radius);
+      overflow: hidden; border: 1px solid rgba(0,0,0,.06);
+    }
+    .faq-question {
+      padding: 1.2rem 1.5rem; font-weight: 700; font-size: .97rem;
+      cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+      user-select: none;
+    }
+    .faq-question i { color: var(--primary); transition: transform .3s; }
+    .faq-item.open .faq-question i { transform: rotate(180deg); }
+    .faq-answer {
+      padding: 0 1.5rem; max-height: 0; overflow: hidden;
+      transition: max-height .4s ease, padding .3s;
+      font-size: .93rem; color: var(--gray); line-height: 1.7;
+    }
+    .faq-item.open .faq-answer { max-height: 200px; padding: 0 1.5rem 1.2rem; }
+
+    /* ===== CTA BANNER ===== */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--primary) 0%, #0d3b8c 100%);
+      padding: 70px 5%; text-align: center; color: #fff;
+      position: relative; overflow: hidden;
+    }
+    .cta-banner::before {
+      content: ''; position: absolute; top: -60px; right: -60px;
+      width: 300px; height: 300px; border-radius: 50%;
+      background: rgba(255,255,255,.05);
+    }
+    .cta-banner h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 900; margin-bottom: .8rem; }
+    .cta-banner p { font-size: 1.1rem; opacity: .8; margin-bottom: 2rem; }
+    .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-white {
+      background: #fff; color: var(--primary); font-weight: 700;
+      padding: 15px 34px; border-radius: 50px; text-decoration: none;
+      font-size: 1rem; transition: all .2s;
+    }
+    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.2); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--dark); color: rgba(255,255,255,.7);
+      padding: 60px 5% 30px;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem; margin-bottom: 3rem;
+    }
+    .footer-brand h3 {
+      font-size: 1.5rem; font-weight: 800; color: #fff; margin-bottom: .6rem;
+    }
+    .footer-brand h3 span { color: var(--accent); }
+    .footer-brand p { font-size: .9rem; line-height: 1.7; max-width: 280px; }
+    .footer-social { display: flex; gap: .7rem; margin-top: 1.2rem; }
+    .footer-social a {
+      width: 38px; height: 38px; border-radius: 10px;
+      background: rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,.7); text-decoration: none; transition: all .2s;
+    }
+    .footer-social a:hover { background: var(--primary); color: #fff; }
+    .footer-col h4 { font-size: .95rem; font-weight: 700; color: #fff; margin-bottom: 1rem; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: .6rem; }
+    .footer-col ul li a {
+      color: rgba(255,255,255,.6); text-decoration: none; font-size: .88rem;
+      transition: color .2s;
+    }
+    .footer-col ul li a:hover { color: #fff; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 1rem; font-size: .85rem;
+    }
+
+    /* ===== FLOATING PHONE BUTTON ===== */
+    .float-call {
+      position: fixed; bottom: 28px; right: 28px; z-index: 999;
+      background: var(--success); color: #fff; border-radius: 50px;
+      padding: 14px 22px; display: flex; align-items: center; gap: 10px;
+      text-decoration: none; font-weight: 700; font-size: .95rem;
+      box-shadow: 0 4px 24px rgba(16,185,129,.5);
+      animation: pulse 2.5s infinite;
+      transition: transform .2s;
+    }
+    .float-call:hover { transform: scale(1.05); }
+    @keyframes pulse {
+      0%,100% { box-shadow: 0 4px 24px rgba(16,185,129,.5); }
+      50% { box-shadow: 0 4px 40px rgba(16,185,129,.8); }
+    }
+
+    /* ===== MODAL ===== */
+    .modal-overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,.65); z-index: 2000;
+      display: none; align-items: center; justify-content: center; padding: 1rem;
+    }
+    .modal-overlay.active { display: flex; }
+    .modal {
+      background: #fff; border-radius: 20px; padding: 2.5rem;
+      max-width: 480px; width: 100%; position: relative;
+      animation: modalIn .25s ease;
+    }
+    @keyframes modalIn { from { opacity:0; transform: scale(.92) translateY(20px); } }
+    .modal-close {
+      position: absolute; top: 1rem; right: 1rem;
+      background: var(--light); border: none; border-radius: 8px;
+      width: 36px; height: 36px; cursor: pointer; font-size: 1.1rem;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .modal h3 { font-size: 1.5rem; font-weight: 800; margin-bottom: .5rem; }
+    .modal p { color: var(--gray); margin-bottom: 1.5rem; font-size: .93rem; }
+
+    /* ===== MOBILE NAV ===== */
+    .mobile-nav {
+      position: fixed; top: 70px; left: 0; right: 0; z-index: 999;
+      background: #fff; border-bottom: 1px solid rgba(0,0,0,.08);
+      padding: 1.5rem 5%;
+      display: none; flex-direction: column; gap: 1.2rem;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a {
+      text-decoration: none; color: var(--dark2); font-weight: 600; font-size: 1rem;
+      padding: .5rem 0; border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .why-grid { grid-template-columns: 1fr; }
+      .why-visual { min-height: 300px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .map-wrapper { grid-template-columns: 1fr; }
+      .map-embed { min-height: 380px; }
+    }
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta .btn-primary { display: none; }
+      .hamburger { display: flex; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .faq-grid { grid-template-columns: 1fr; }
+      .hero-stats { gap: 1.5rem; }
+      .trust-bar { gap: 1.5rem; }
+      .float-call span { display: none; }
+      .float-call { padding: 16px; border-radius: 50%; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== STICKY NAV ===== -->
+<nav id="navbar">
+  <a href="#" class="nav-logo"><i class="fas fa-tools"></i>ProServ<span>Elite</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#locations">Locations</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a href="tel:+13105550199" class="btn-phone"><i class="fas fa-phone"></i>(310) 555-0199</a>
+    <a href="#contact" class="btn-primary"><i class="fas fa-calendar-check"></i>Book Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#services" onclick="closeMobile()">Services</a>
+  <a href="#locations" onclick="closeMobile()">Locations</a>
+  <a href="#reviews" onclick="closeMobile()">Reviews</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+  <a href="tel:+13105550199" style="color:var(--primary)"><i class="fas fa-phone"></i> (310) 555-0199</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-badge"><i class="fas fa-star"></i> #1 Rated Home Services in LA</div>
+    <h1>Your Trusted<br /><span>Home Service</span><br />Experts</h1>
+    <p>From plumbing and electrical to HVAC and remodeling — we handle it all. Licensed, insured, and available 24/7 across Los Angeles County.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-hero-primary"><i class="fas fa-calendar-check"></i>Get a Free Quote</a>
+      <a href="tel:+13105550199" class="btn-hero-secondary"><i class="fas fa-phone"></i>Call Now</a>
+    </div>
+    <div class="hero-stars">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      &nbsp;<strong style="color:#fff">4.9/5</strong>&nbsp;from 312 verified reviews
+    </div>
+    <div class="hero-stats" style="margin-top:2rem">
+      <div class="hero-stat"><div class="num">15+</div><div class="lbl">Years Experience</div></div>
+      <div class="hero-stat"><div class="num">8,500+</div><div class="lbl">Jobs Completed</div></div>
+      <div class="hero-stat"><div class="num">24/7</div><div class="lbl">Emergency Service</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST BAR ===== -->
+<div class="trust-bar">
+  <div class="trust-item"><i class="fas fa-shield-halved"></i> Fully Licensed & Insured</div>
+  <div class="trust-item"><i class="fas fa-clock"></i> 24/7 Emergency Service</div>
+  <div class="trust-item"><i class="fas fa-dollar-sign"></i> Upfront Pricing — No Surprises</div>
+  <div class="trust-item"><i class="fas fa-medal"></i> BBB A+ Accredited</div>
+  <div class="trust-item"><i class="fas fa-undo"></i> 100% Satisfaction Guarantee</div>
+</div>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div style="text-align:center;margin-bottom:1rem">
+    <div class="section-label text-center" style="justify-content:center">What We Do</div>
+    <h2 class="section-title text-center">Professional Services<br />You Can Count On</h2>
+    <p class="section-sub text-center">Expert craftsmanship backed by a satisfaction guarantee. We show up on time, every time.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card" onclick="openModal('plumbing')">
+      <div class="service-price">From $89</div>
+      <div class="service-icon"><i class="fas fa-faucet"></i></div>
+      <h3>Plumbing</h3>
+      <p>Leak repairs, pipe installation, drain cleaning, water heaters, and full bathroom plumbing. Fast response, same-day service available.</p>
+      <a href="#" class="service-link" onclick="event.preventDefault();openModal('plumbing')">Learn More <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="service-card" onclick="openModal('electrical')">
+      <div class="service-price">From $129</div>
+      <div class="service-icon" style="background:linear-gradient(135deg,#f59e0b,#d97706)"><i class="fas fa-bolt"></i></div>
+      <h3>Electrical</h3>
+      <p>Panel upgrades, outlet installation, lighting, ceiling fans, EV charger installation, and full home rewiring by licensed electricians.</p>
+      <a href="#" class="service-link" onclick="event.preventDefault();openModal('electrical')">Learn More <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="service-card" onclick="openModal('hvac')">
+      <div class="service-price">From $99</div>
+      <div class="service-icon" style="background:linear-gradient(135deg,#06b6d4,#0284c7)"><i class="fas fa-wind"></i></div>
+      <h3>HVAC</h3>
+      <p>AC repair, heating system service, duct cleaning, thermostat installation, and new HVAC system installation. All brands serviced.</p>
+      <a href="#" class="service-link" onclick="event.preventDefault();openModal('hvac')">Learn More <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="service-card" onclick="openModal('remodel')">
+      <div class="service-price">Free Est.</div>
+      <div class="service-icon" style="background:linear-gradient(135deg,#8b5cf6,#6d28d9)"><i class="fas fa-paint-roller"></i></div>
+      <h3>Remodeling</h3>
+      <p>Kitchen and bathroom remodels, flooring, drywall, painting, and complete home renovation projects from design to completion.</p>
+      <a href="#" class="service-link" onclick="event.preventDefault();openModal('remodel')">Learn More <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="service-card" onclick="openModal('roofing')">
+      <div class="service-price">Free Est.</div>
+      <div class="service-icon" style="background:linear-gradient(135deg,#ef4444,#b91c1c)"><i class="fas fa-house"></i></div>
+      <h3>Roofing</h3>
+      <p>Roof repairs, replacement, gutter installation, leak detection and waterproofing for residential and light commercial properties.</p>
+      <a href="#" class="service-link" onclick="event.preventDefault();openModal('roofing')">Learn More <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="service-card" onclick="openModal('handyman')">
+      <div class="service-price">From $59</div>
+      <div class="service-icon" style="background:linear-gradient(135deg,#10b981,#047857)"><i class="fas fa-screwdriver-wrench"></i></div>
+      <h3>Handyman</h3>
+      <p>Furniture assembly, door/window repair, caulking, patching, pressure washing, and all those small jobs around the house.</p>
+      <a href="#" class="service-link" onclick="event.preventDefault();openModal('handyman')">Learn More <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section id="whyus" style="background:#fff">
+  <div class="why-grid">
+    <div>
+      <div class="section-label">Why Choose Us</div>
+      <h2 class="section-title">The ProServ Elite<br />Difference</h2>
+      <p class="section-sub">We're not just contractors — we're neighbors who care about the quality of your home and your experience.</p>
+      <div class="why-items">
+        <div class="why-item">
+          <div class="why-icon"><i class="fas fa-user-check"></i></div>
+          <div>
+            <h4>Background-Checked Pros</h4>
+            <p>Every technician is background checked, drug tested, and thoroughly vetted before they ever enter your home.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon"><i class="fas fa-clock"></i></div>
+          <div>
+            <h4>On-Time Guarantee</h4>
+            <p>We show up in the agreed window — if we're late, your service is discounted. Your time matters.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon"><i class="fas fa-tag"></i></div>
+          <div>
+            <h4>Flat-Rate Pricing</h4>
+            <p>No hourly surprises. We give you the full price upfront so you know exactly what you'll pay before we start.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon"><i class="fas fa-shield-halved"></i></div>
+          <div>
+            <h4>Workmanship Warranty</h4>
+            <p>All work is backed by our 1-year labor warranty. If something's not right, we'll fix it — at no charge.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="why-visual">
+      <div class="why-visual-bg"></div>
+      <div class="why-stats-overlay">
+        <div class="why-stat-box"><div class="big">98%</div><div class="sm">Customer Satisfaction Rate</div></div>
+        <div class="why-stat-box"><div class="big">2hr</div><div class="sm">Average Response Time</div></div>
+        <div class="why-stat-box"><div class="big">$0</div><div class="sm">Hidden Fees or Surprises</div></div>
+        <div class="why-stat-box"><div class="big">24/7</div><div class="sm">Emergency Availability</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GOOGLE MAPS ===== -->
+<div id="map-section">
+  <div class="map-wrapper">
+    <div class="map-info">
+      <h2>Find Us in Los Angeles</h2>
+      <div class="map-detail">
+        <i class="fas fa-location-dot"></i>
+        <div>
+          <div class="label">Address</div>
+          <div class="val">1247 Sunset Blvd, Los Angeles, CA 90026</div>
+        </div>
+      </div>
+      <div class="map-detail">
+        <i class="fas fa-phone"></i>
+        <div>
+          <div class="label">Phone</div>
+          <div class="val"><a href="tel:+13105550199">(310) 555-0199</a></div>
+        </div>
+      </div>
+      <div class="map-detail">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <div class="label">Email</div>
+          <div class="val"><a href="mailto:hello@proservelite.com">hello@proservelite.com</a></div>
+        </div>
+      </div>
+      <div class="map-hours">
+        <h4><i class="fas fa-clock"></i> Business Hours</h4>
+        <div class="hours-row"><span>Monday – Friday</span><span>7:00 AM – 8:00 PM</span></div>
+        <div class="hours-row"><span>Saturday</span><span>8:00 AM – 5:00 PM</span></div>
+        <div class="hours-row"><span>Sunday</span><span>8:00 AM – 5:00 PM</span></div>
+        <div class="hours-row" style="border:none"><span>Emergency Line</span><span style="color:#6ee7b7">24/7 Available</span></div>
+      </div>
+      <div class="open-badge" id="openBadge">Open Now</div>
+    </div>
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26439.32826737513!2d-118.27040!3d34.07648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b85dea2a93%3A0x61906b6cd3cc7cb1!2sSunset%20Blvd%2C%20Los%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="ProServ Elite - Google Maps Location">
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<!-- ===== LOCAL SEO LOCATIONS ===== -->
+<section id="locations">
+  <div style="text-align:center;margin-bottom:1rem">
+    <div class="section-label" style="justify-content:center;color:var(--accent)">Service Areas</div>
+    <h2 class="section-title" style="color:#fff">Serving All of<br />Los Angeles County</h2>
+    <p class="section-sub" style="color:rgba(255,255,255,.65);margin:0 auto">No matter where you are in the greater LA area, our pros are close by and ready to help.</p>
+  </div>
+  <div class="locations-grid">
+    <div class="location-card">
+      <h3><i class="fas fa-location-dot"></i>Los Angeles</h3>
+      <p>Full-service home repairs & installations across all LA neighborhoods. Same-day service available.</p>
+      <a href="#contact" class="loc-link">Book in LA <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="location-card">
+      <h3><i class="fas fa-location-dot"></i>Santa Monica</h3>
+      <p>Trusted by Santa Monica homeowners for plumbing, electrical, and HVAC for over 15 years.</p>
+      <a href="#contact" class="loc-link">Book in Santa Monica <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="location-card">
+      <h3><i class="fas fa-location-dot"></i>West Hollywood</h3>
+      <p>Expert contractors serving WeHo residents with licensed, professional home services.</p>
+      <a href="#contact" class="loc-link">Book in WeHo <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="location-card">
+      <h3><i class="fas fa-location-dot"></i>Burbank</h3>
+      <p>Reliable home service pros covering all of Burbank with upfront pricing and fast turnarounds.</p>
+      <a href="#contact" class="loc-link">Book in Burbank <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="location-card">
+      <h3><i class="fas fa-location-dot"></i>Pasadena</h3>
+      <p>Serving Pasadena homes with expert craftsmanship across plumbing, electrical & remodeling.</p>
+      <a href="#contact" class="loc-link">Book in Pasadena <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="location-card">
+      <h3><i class="fas fa-location-dot"></i>Glendale</h3>
+      <p>From quick fixes to full renovations — Glendale's go-to home service team is a call away.</p>
+      <a href="#contact" class="loc-link">Book in Glendale <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="location-card">
+      <h3><i class="fas fa-location-dot"></i>Long Beach</h3>
+      <p>Professional home services throughout Long Beach — licensed, insured, and highly rated.</p>
+      <a href="#contact" class="loc-link">Book in Long Beach <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="location-card">
+      <h3><i class="fas fa-location-dot"></i>Torrance</h3>
+      <p>South Bay homeowners trust ProServ Elite for fast, reliable, and affordable home repairs.</p>
+      <a href="#contact" class="loc-link">Book in Torrance <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="location-card">
+      <h3><i class="fas fa-location-dot"></i>Culver City</h3>
+      <p>Culver City residents get priority scheduling and competitive rates on all home services.</p>
+      <a href="#contact" class="loc-link">Book in Culver City <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="location-card">
+      <h3><i class="fas fa-location-dot"></i>Inglewood</h3>
+      <p>Fast-response home repairs and installations throughout Inglewood and surrounding areas.</p>
+      <a href="#contact" class="loc-link">Book in Inglewood <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section id="reviews">
+  <div style="text-align:center;margin-bottom:1rem">
+    <div class="section-label" style="justify-content:center">Testimonials</div>
+    <h2 class="section-title text-center">What Our Customers Say</h2>
+    <p class="section-sub text-center">Don't take our word for it. Here's what real customers across Los Angeles are saying.</p>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="review-text">"Our water heater burst at 11pm and ProServ had a tech at our door within 90 minutes. Installed a new unit by 2am. Absolute lifesavers — I can't recommend them enough!"</p>
+      <div class="reviewer">
+        <div class="reviewer-avatar" style="background:linear-gradient(135deg,#1a56db,#4f8ef7)">M</div>
+        <div>
+          <div class="reviewer-name">Maria T.</div>
+          <div class="reviewer-sub">Los Angeles, CA</div>
+          <div class="review-source"><i class="fab fa-google"></i> Google Review</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="review-text">"Used ProServ for a full kitchen remodel. They came in under budget and finished 3 days early. The team was professional, clean, and truly skilled. My kitchen looks incredible."</p>
+      <div class="reviewer">
+        <div class="reviewer-avatar" style="background:linear-gradient(135deg,#f59e0b,#d97706)">J</div>
+        <div>
+          <div class="reviewer-name">James K.</div>
+          <div class="reviewer-sub">Santa Monica, CA</div>
+          <div class="review-source"><i class="fab fa-google"></i> Google Review</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="review-text">"AC broke in a heat wave. Called ProServ at 8am and they were here by noon. Fixed it in under an hour with a part they had on the truck. Pricing was completely transparent."</p>
+      <div class="reviewer">
+        <div class="reviewer-avatar" style="background:linear-gradient(135deg,#10b981,#047857)">S</div>
+        <div>
+          <div class="reviewer-name">Sandra R.</div>
+          <div class="reviewer-sub">Burbank, CA</div>
+          <div class="review-source"><i class="fab fa-google"></i> Google Review</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="review-text">"Had my entire electrical panel upgraded. The electrician was knowledgeable, explained everything, and left the workspace spotless. Already booked them again for bathroom plumbing."</p>
+      <div class="reviewer">
+        <div class="reviewer-avatar" style="background:linear-gradient(135deg,#8b5cf6,#6d28d9)">D</div>
+        <div>
+          <div class="reviewer-name">David P.</div>
+          <div class="reviewer-sub">Pasadena, CA</div>
+          <div class="review-source"><i class="fab fa-google"></i> Google Review</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="review-text">"Booked online, they confirmed within minutes. The plumber arrived on time, wore shoe covers, and fixed our bathroom leak perfectly. Will be a customer for life."</p>
+      <div class="reviewer">
+        <div class="reviewer-avatar" style="background:linear-gradient(135deg,#ef4444,#b91c1c)">L</div>
+        <div>
+          <div class="reviewer-name">Lisa W.</div>
+          <div class="reviewer-sub">West Hollywood, CA</div>
+          <div class="review-source"><i class="fab fa-google"></i> Google Review</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="review-text">"Five stars, easily. Used them for roofing, plumbing AND handyman work in one week. Consistent quality across all three crews. These guys run a seriously tight operation."</p>
+      <div class="reviewer">
+        <div class="reviewer-avatar" style="background:linear-gradient(135deg,#06b6d4,#0284c7)">R</div>
+        <div>
+          <div class="reviewer-name">Robert M.</div>
+          <div class="reviewer-sub">Long Beach, CA</div>
+          <div class="review-source"><i class="fab fa-google"></i> Google Review</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" style="background:var(--light)">
+  <div style="text-align:center;margin-bottom:1rem">
+    <div class="section-label" style="justify-content:center">FAQ</div>
+    <h2 class="section-title text-center">Frequently Asked Questions</h2>
+    <p class="section-sub text-center">Everything you need to know before booking.</p>
+  </div>
+  <div class="faq-grid">
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">Do you offer same-day service? <i class="fas fa-chevron-down"></i></div>
+      <div class="faq-answer">Yes! In most cases we can dispatch a technician the same day you call, often within 2 hours. For non-urgent work, we offer flexible scheduling including evenings and weekends.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">Are your technicians licensed and insured? <i class="fas fa-chevron-down"></i></div>
+      <div class="faq-answer">Absolutely. All ProServ Elite technicians hold the required state licenses for their trade, carry full liability insurance, and pass background checks before joining our team.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">How does flat-rate pricing work? <i class="fas fa-chevron-down"></i></div>
+      <div class="faq-answer">Before any work begins, we provide a written quote based on the job — not the clock. You approve the price upfront, so there are zero surprises on your bill. We never charge by the hour.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">What areas do you serve? <i class="fas fa-chevron-down"></i></div>
+      <div class="faq-answer">We serve all of Los Angeles County including Los Angeles, Santa Monica, West Hollywood, Burbank, Pasadena, Glendale, Long Beach, Torrance, Culver City, Inglewood, and many more.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">Do you offer emergency services? <i class="fas fa-chevron-down"></i></div>
+      <div class="faq-answer">Yes, our emergency line is available 24/7, 365 days a year. Whether it's a burst pipe at midnight or a power outage on a holiday, call (310) 555-0199 and we'll dispatch immediately.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">What payment methods do you accept? <i class="fas fa-chevron-down"></i></div>
+      <div class="faq-answer">We accept all major credit cards, debit cards, cash, check, and Zelle. For larger projects, we also offer flexible financing options with approved credit.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT FORM ===== -->
+<section id="contact">
+  <div class="contact-grid">
+    <div class="form-wrapper">
+      <h3>Get a Free Quote</h3>
+      <p>Fill out the form and we'll get back to you within 30 minutes during business hours.</p>
+
+      <div id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name *</label>
+            <input type="text" id="firstName" placeholder="John" required />
+          </div>
+          <div class="form-group">
+            <label>Last Name *</label>
+            <input type="text" id="lastName" placeholder="Smith" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" id="phone" placeholder="(310) 000-0000" required />
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" id="email" placeholder="john@example.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Service Needed *</label>
+          <select id="service" required>
+            <option value="">Select a service...</option>
+            <option>Plumbing</option>
+            <option>Electrical</option>
+            <option>HVAC / AC</option>
+            <option>Remodeling</option>
+            <option>Roofing</option>
+            <option>Handyman</option>
+            <option>Emergency Service</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Your Location / City *</label>
+          <input type="text" id="city" placeholder="e.g. Santa Monica, CA" required />
+        </div>
+        <div class="form-group">
+          <label>Describe Your Issue</label>
+          <textarea id="message" placeholder="Tell us more about what you need help with..."></textarea>
+        </div>
+        <button class="btn-submit" onclick="submitForm()" id="submitBtn">
+          <i class="fas fa-paper-plane"></i> Send My Request
+        </button>
+      </div>
+
+      <div class="form-success" id="formSuccess">
+        <i class="fas fa-circle-check"></i>
+        <h4>Request Sent Successfully!</h4>
+        <p>Thanks! We'll call you back within 30 minutes. For immediate help, call <a href="tel:+13105550199" style="color:var(--primary);font-weight:700">(310) 555-0199</a>.</p>
+      </div>
+    </div>
+
+    <div class="contact-info">
+      <div>
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Ready to Get<br />Started?</h2>
+        <p>Contact us by phone, email, or fill out the form. Our team is standing by to help you today.</p>
+      </div>
+      <a href="tel:+13105550199" class="contact-card" style="text-decoration:none;color:inherit">
+        <div class="contact-card-icon" style="background:linear-gradient(135deg,var(--success),#047857)">
+          <i class="fas fa-phone"></i>
+        </div>
+        <div>
+          <h4>Call or Text</h4>
+          <a href="tel:+13105550199" class="val">(310) 555-0199</a>
+        </div>
+      </a>
+      <div class="contact-card">
+        <div class="contact-card-icon" style="background:linear-gradient(135deg,var(--primary),#4f8ef7)">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div>
+          <h4>Email Us</h4>
+          <a href="mailto:hello@proservelite.com" class="val">hello@proservelite.com</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon" style="background:linear-gradient(135deg,#f59e0b,#d97706)">
+          <i class="fas fa-location-dot"></i>
+        </div>
+        <div>
+          <h4>Our Office</h4>
+          <p class="val">1247 Sunset Blvd, Los Angeles, CA 90026</p>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon" style="background:linear-gradient(135deg,#ef4444,#b91c1c)">
+          <i class="fas fa-clock"></i>
+        </div>
+        <div>
+          <h4>Business Hours</h4>
+          <p class="val">Mon–Fri 7am–8pm · Sat–Sun 8am–5pm</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<div class="cta-banner">
+  <h2>Need Help Right Now?</h2>
+  <p>Our team is standing by. Call for immediate dispatch or book online in under 2 minutes.</p>
+  <div class="cta-actions">
+    <a href="tel:+13105550199" class="btn-white"><i class="fas fa-phone"></i> (310) 555-0199</a>
+    <a href="#contact" class="btn-hero-secondary" style="color:#fff"><i class="fas fa-calendar-check"></i> Book Online</a>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>ProServ<span>Elite</span></h3>
+      <p>Los Angeles' most trusted home service company. Licensed, insured, and dedicated to delivering 5-star results every time.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Plumbing</a></li>
+        <li><a href="#services">Electrical</a></li>
+        <li><a href="#services">HVAC</a></li>
+        <li><a href="#services">Remodeling</a></li>
+        <li><a href="#services">Roofing</a></li>
+        <li><a href="#services">Handyman</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Service Areas</h4>
+      <ul>
+        <li><a href="#locations">Los Angeles</a></li>
+        <li><a href="#locations">Santa Monica</a></li>
+        <li><a href="#locations">West Hollywood</a></li>
+        <li><a href="#locations">Burbank</a></li>
+        <li><a href="#locations">Pasadena</a></li>
+        <li><a href="#locations">Long Beach</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#whyus">About Us</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2025 ProServ Elite. All rights reserved. CA License #AB12345C</div>
+    <div>Made with ❤️ in Los Angeles, CA</div>
+  </div>
+</footer>
+
+<!-- ===== FLOATING CALL BUTTON ===== -->
+<a href="tel:+13105550199" class="float-call" aria-label="Call us now">
+  <i class="fas fa-phone"></i>
+  <span>Call Now</span>
+</a>
+
+<!-- ===== SERVICE MODAL ===== -->
+<div class="modal-overlay" id="serviceModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script>
+  // ===== NAV SCROLL EFFECT =====
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+  });
+
+  // ===== MOBILE NAV =====
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobileNav').classList.toggle('open');
+  });
+  function closeMobile() { document.getElementById('mobileNav').classList.remove('open'); }
+
+  // ===== OPEN/CLOSED BADGE =====
+  function updateOpenBadge() {
+    const now = new Date();
+    const day = now.getDay(); // 0=Sun, 6=Sat
+    const hour = now.getHours();
+    const badge = document.getElementById('openBadge');
+    let isOpen = false;
+    if (day >= 1 && day <= 5 && hour >= 7 && hour < 20) isOpen = true;
+    if ((day === 0 || day === 6) && hour >= 8 && hour < 17) isOpen = true;
+    if (isOpen) {
+      badge.textContent = '● Open Now';
+      badge.style.background = 'rgba(16,185,129,.2)';
+      badge.style.color = '#6ee7b7';
+    } else {
+      badge.textContent = '● Closed — Emergency Line Available';
+      badge.style.background = 'rgba(239,68,68,.2)';
+      badge.style.color = '#fca5a5';
+    }
+  }
+  updateOpenBadge();
+
+  // ===== FAQ TOGGLE =====
+  function toggleFaq(el) {
+    const item = el.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // ===== SERVICE MODALS =====
+  const serviceData = {
+    plumbing: {
+      icon: 'fas fa-faucet', color: '#1a56db',
+      title: 'Plumbing Services',
+      items: ['Leak detection & repair','Drain cleaning & unclogging','Water heater installation & repair','Pipe installation & replacement','Toilet, sink & faucet repair','Sewer line inspection & repair','Whole-house repiping','Emergency plumbing 24/7'],
+      price: 'Starting from $89'
+    },
+    electrical: {
+      icon: 'fas fa-bolt', color: '#f59e0b',
+      title: 'Electrical Services',
+      items: ['Panel upgrades & replacement','Outlet & switch installation','Lighting installation & repair','Ceiling fan installation','EV charger installation','Circuit breaker repair','Whole-home rewiring','Emergency electrical 24/7'],
+      price: 'Starting from $129'
+    },
+    hvac: {
+      icon: 'fas fa-wind', color: '#06b6d4',
+      title: 'HVAC Services',
+      items: ['AC repair & tune-up','Heating system service','New HVAC installation','Duct cleaning & sealing','Thermostat installation','Air quality improvement','Mini-split installation','Emergency HVAC 24/7'],
+      price: 'Starting from $99'
+    },
+    remodel: {
+      icon: 'fas fa-paint-roller', color: '#8b5cf6',
+      title: 'Remodeling Services',
+      items: ['Kitchen remodeling','Bathroom renovation','Flooring installation','Drywall repair & installation','Interior & exterior painting','Deck & patio building','Basement finishing','Full home renovation'],
+      price: 'Free Estimates'
+    },
+    roofing: {
+      icon: 'fas fa-house', color: '#ef4444',
+      title: 'Roofing Services',
+      items: ['Roof repair & patching','Full roof replacement','Gutter installation & cleaning','Leak detection & waterproofing','Shingle replacement','Flat roof systems','Skylight installation','Storm damage repair'],
+      price: 'Free Estimates'
+    },
+    handyman: {
+      icon: 'fas fa-screwdriver-wrench', color: '#10b981',
+      title: 'Handyman Services',
+      items: ['Furniture assembly','Door & window repair','Caulking & weatherproofing','Drywall patching','TV & shelf mounting','Pressure washing','Minor plumbing & electrical','Seasonal maintenance'],
+      price: 'Starting from $59'
+    }
+  };
+
+  function openModal(key) {
+    const s = serviceData[key];
+    document.getElementById('modalContent').innerHTML = `
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:1rem">
+        <div style="width:50px;height:50px;border-radius:12px;background:${s.color};display:flex;align-items:center;justify-content:center">
+          <i class="${s.icon}" style="color:#fff;font-size:1.3rem"></i>
+        </div>
+        <div>
+          <h3 style="font-size:1.3rem;margin:0">${s.title}</h3>
+          <span style="color:var(--primary);font-weight:700;font-size:.9rem">${s.price}</span>
+        </div>
+      </div>
+      <ul style="list-style:none;margin-bottom:1.5rem">
+        ${s.items.map(i => `<li style="padding:7px 0;border-bottom:1px solid #f1f5f9;font-size:.93rem;display:flex;align-items:center;gap:10px"><i class="fas fa-check-circle" style="color:var(--success)"></i>${i}</li>`).join('')}
+      </ul>
+      <div style="display:flex;gap:.8rem">
+        <a href="tel:+13105550199" class="btn-primary" style="flex:1;justify-content:center;text-decoration:none"><i class="fas fa-phone"></i>Call Now</a>
+        <a href="#contact" class="btn-primary" onclick="closeModal()" style="flex:1;justify-content:center;background:var(--accent);color:var(--dark);text-decoration:none"><i class="fas fa-calendar-check"></i>Get Quote</a>
+      </div>
+    `;
+    document.getElementById('serviceModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal() {
+    document.getElementById('serviceModal').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('serviceModal').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+  });
+
+  // ===== CONTACT FORM =====
+  function submitForm() {
+    const fields = ['firstName','lastName','phone','email','service','city'];
+    let valid = true;
+    fields.forEach(id => {
+      const el = document.getElementById(id);
+      if (!el.value.trim()) {
+        el.style.borderColor = '#ef4444';
+        el.style.boxShadow = '0 0 0 3px rgba(239,68,68,.12)';
+        valid = false;
+      } else {
+        el.style.borderColor = '';
+        el.style.boxShadow = '';
+      }
+    });
+    const emailEl = document.getElementById('email');
+    if (emailEl.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl.value)) {
+      emailEl.style.borderColor = '#ef4444';
+      valid = false;
+    }
+    if (!valid) return;
+
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+    setTimeout(() => {
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    }, 1500);
+  }
+
+  // ===== PHONE MASK =====
+  document.getElementById('phone').addEventListener('input', function() {
+    let v = this.value.replace(/\D/g,'').substring(0,10);
+    if (v.length >= 6) v = `(${v.slice(0,3)}) ${v.slice(3,6)}-${v.slice(6)}`;
+    else if (v.length >= 3) v = `(${v.slice(0,3)}) ${v.slice(3)}`;
+    this.value = v;
+  });
+
+  // ===== SCROLL ANIMATION =====
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.service-card, .review-card, .location-card, .why-item, .contact-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(28px)';
+    el.style.transition = 'opacity .55s ease, transform .55s ease';
+    observer.observe(el);
+  });
+
+  // ===== COUNTER ANIMATION =====
+  function animateCounter(el, target, suffix='') {
+    let current = 0;
+    const step = target / 60;
+    const timer = setInterval(() => {
+      current += step;
+      if (current >= target) { current = target; clearInterval(timer); }
+      el.textContent = Math.floor(current).toLocaleString() + suffix;
+    }, 25);
+  }
+  const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        document.querySelectorAll('.hero-stat .num').forEach(n => {
+          const txt = n.textContent;
+          if (txt.includes('+')) animateCounter(n, parseInt(txt), '+');
+        });
+        statsObserver.disconnect();
+      }
+    });
+  });
+  const heroStats = document.querySelector('.hero-stats');
+  if (heroStats) statsObserver.observe(heroStats);
+</script>
+</body>
+</html>
